@@ -9,9 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
-
+  
     <title>Modern HTML Email Template</title>
 
 
@@ -459,7 +457,21 @@
         </p>
     </footer>
 
+ <script>
+        // Function to add the link to the head
+        function addFontLink() {
+            // Create a new link element
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap';
+            
+            // Append the link element to the head
+            document.head.appendChild(link);
+        }
 
+        // Wait for the DOM content to be fully loaded
+        document.addEventListener('DOMContentLoaded', addFontLink);
+    </script>
 
 </body>
 
